@@ -23,7 +23,7 @@ public class TestCaseReporting {
 		// htmlFile=new
 		// FileOutputStream("D:/Generic/"+GlobalVar.USER_NAME+"\\TestCaseReporting\\"+"("+GlobalVar.TEST_CASE_NAME+")"+".html");
 
-		htmlFile = new FileOutputStream("/Users/ahmedjaved/Desktop/" + GlobalVars.PROJ_NAME + "/"
+		htmlFile = new FileOutputStream("/Users/Javed/Desktop/" + GlobalVars.PROJ_NAME + "/"
 				+ GlobalVars.SUITE_NAME + "/TestCaseReporting/" + "TestCaseReporting" + ".html");
 		
 		printhtml = new PrintStream(htmlFile);

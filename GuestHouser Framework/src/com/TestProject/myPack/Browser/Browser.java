@@ -12,7 +12,7 @@ public class Browser {
 		if (browserName.toLowerCase().contains("chrome")) {
 			System.out.println("Browser Request sent is chrome...");
 			System.out.println("driver path obtained is:-"+driverPath);
-			System.setProperty("webdriver.chrome.driver", driverPath);
+			//System.setProperty("webdriver.chrome.driver", driverPath);
 			driver = new ChromeDriver();
 			driver.get(URL);
 			Thread.sleep(2000);

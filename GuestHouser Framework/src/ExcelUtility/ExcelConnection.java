@@ -59,7 +59,7 @@ public class ExcelConnection {
 
 		for (int i = 1; i < sheet.getPhysicalNumberOfRows(); i++) {
 			{
-				for (int j = 0; j < sheet.getRow(j).getPhysicalNumberOfCells(); j++) {
+				for (int j = 0; j < sheet.getRow(i).getPhysicalNumberOfCells(); j++) {
 
 					rowData.add(sheet.getRow(i).getCell(j));
 				}

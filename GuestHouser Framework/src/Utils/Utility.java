@@ -156,7 +156,7 @@ public class Utility {
 	public void capturePassScreenShot() throws IOException {
 
 		File src = ((TakesScreenshot) GlobalVars.Web_Driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("/Users/ahmedjaved/Desktop/" + GlobalVars.PROJ_NAME + "/"
+		FileUtils.copyFile(src, new File("/Users/Javed/Desktop/" + GlobalVars.PROJ_NAME + "/"
 				+ GlobalVars.SUITE_NAME + "/Snapshots/Pass Images/" + GlobalVars.SCREEN_SHOT_NAME + " .png"));
 
 	}
@@ -164,7 +164,7 @@ public class Utility {
 	public void captureFailScreenShot() throws IOException {
 
 		File src = ((TakesScreenshot) GlobalVars.Web_Driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("/Users/ahmedjaved/Desktop/" + GlobalVars.PROJ_NAME + "/"
+		FileUtils.copyFile(src, new File("/Users/Javed/Desktop/" + GlobalVars.PROJ_NAME + "/"
 				+ GlobalVars.SUITE_NAME + "/Snapshots/Fail Images/" + GlobalVars.SCREEN_SHOT_NAME + " .png"));
 
 	}

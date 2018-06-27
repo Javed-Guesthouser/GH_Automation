@@ -24,8 +24,8 @@ public class TestStepReporting {
 		// htmlFile=new
 		// FileOutputStream("D:/Generic/"+GlobalVar.USER_NAME+"\\TestCaseReporting\\"+"("+GlobalVar.TEST_CASE_NAME+")"+".html");
 
-		htmlFile = new FileOutputStream("/Users/ahmedjaved/Desktop/" + GlobalVars.PROJ_NAME + "/"
-				+ GlobalVars.SUITE_NAME + "/TestStepReporting/" + GlobalVars.TEST_CASE_NAME + ".html");
+		htmlFile = new FileOutputStream("/Users/Javed/Desktop/" + GlobalVars.PROJ_NAME + "/" + GlobalVars.SUITE_NAME
+				+ "/TestStepReporting/" + GlobalVars.TEST_CASE_NAME + ".html");
 
 		printhtml = new PrintStream(htmlFile);
 	}
@@ -105,10 +105,17 @@ public class TestStepReporting {
 
 				this.FailCount = this.FailCount + 1;
 			}
-			printhtml.append(
-					"<td width='13%' bgcolor='#FFFFDC' valign='middle' align='center' ><font color='#000000' face='Tahoma' size='2'>"
-							+ "<a href= \"" + "../" + "Snapshots/" + "Pass Images/" + GlobalVars.SCREEN_SHOT_NAME + " "
-							+ ".png" + "\">Click to View </a></font></td>");
+			if (Status.toUpperCase() == "PASS") {
+				printhtml.append(
+						"<td width='13%' bgcolor='#FFFFDC' valign='middle' align='center' ><font color='#000000' face='Tahoma' size='2'>"
+								+ "<a href= \"" + "../" + "Snapshots/" + "Pass Images/" + GlobalVars.SCREEN_SHOT_NAME
+								+ " " + ".png" + "\">Click to View </a></font></td>");
+			} else {
+				printhtml.append(
+						"<td width='13%' bgcolor='#FFFFDC' valign='middle' align='center' ><font color='#000000' face='Tahoma' size='2'>"
+								+ "<a href= \"" + "../" + "Snapshots/" + "Fail Images/" + GlobalVars.SCREEN_SHOT_NAME
+								+ " " + ".png" + "\">Click to View </a></font></td>");
+			}
 
 		} catch (Exception e) {
 			System.out.println(e);

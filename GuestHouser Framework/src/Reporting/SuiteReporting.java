@@ -38,7 +38,7 @@ public class SuiteReporting {
 		GlobalVars.PROJ_NAME = str; // str.substring(index + 1);
 		System.out.println("Iteration flag received in open file is:--" + GlobalVars.ITERATION_FLAG);
 
-		f1 = new File("/Users/ahmedjaved/Desktop/" + GlobalVars.PROJ_NAME + "/" + GlobalVars.SUITE_NAME);
+		f1 = new File("/Users/Javed/Desktop/" + GlobalVars.PROJ_NAME + "/" + GlobalVars.SUITE_NAME);
 		System.out.println("****" + f1);
 		f1.mkdir();
 

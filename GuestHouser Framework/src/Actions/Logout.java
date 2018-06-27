@@ -46,7 +46,7 @@ public class Logout {
 		} else {
 			utility.captureFailScreenShot();
 			DriverSession.getLastStepExecutionReportingInstance().testStepReporting("Logout Button 2should be clicked",
-					"PASS", "Logout Button 1 click failed..");
+					"FAIL", "Logout Button 1 click failed..");
 
 		}
 	}
